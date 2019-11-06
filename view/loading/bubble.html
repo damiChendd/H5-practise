@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .bubble-box{
+      width: 200px;
+      height: 100px;
+      margin: 150px auto ;
+      background-color: #F6E6CC;
+      text-align: center;
+      line-height: 100px;
+    }
+    .bubble1{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000000;
+      animation: changedBubble  1s ease infinite;
+      animation-delay: 0s;
+      animation-direction: revert;
+    }
+    .bubble2{
+      /*annotation: changedBubble  2s ease infinite;*/
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000000;
+      animation: changedBubble  1s ease infinite;
+      animation-delay: 0.1s;
+    }
+    .bubble3{
+      /*annotation: changedBubble  2s ease infinite;*/
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #000000;
+      animation: changedBubble  1s ease infinite;
+      animation-delay: 0.2s;
+    }
+    @keyframes changedBubble {
+      0%{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+      25%{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+      50%{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+      75%{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+      100%{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--所要效果，三个泡泡依次变大-->
+  <div class="bubble-box">
+    <span class="bubble1"></span>
+    <span class="bubble2"></span>
+    <span class="bubble3"></span>
+  </div>
+</body>
+</html>

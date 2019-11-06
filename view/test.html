@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+测试页面
+</body>
+<script type="text/javascript">
+  console.log('javascript中的this')
+  console.log(this)
+
+  // function thisTest() {
+  //   'use strict';
+  //   console.log('打印函数中的this')
+  //   console.log(this)
+  // }
+  // thisTest.prototype.thisTestChild = function () {
+  //   console.log('打印子函数的this')
+  //   console.log(this)
+  // }
+  //
+  // // var p = new thisTest()
+  // // p.thisTestChild()
+  // thisTest()
+  var obj = {
+    name:'小红',
+    age:'10',
+    showName: function () {
+      console.log('showNamethis')
+      console.log(this.name)
+    },
+    showAge: function () {
+      console.log('showAgeThis')
+      console.log(this.age)
+    }
+  }
+
+  var user = Object.create(obj)
+  user.showName()
+  user.showAge()
+
+
+</script>
+</html>

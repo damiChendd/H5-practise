@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微信授权</title>
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+</head>
+<body>
+  <button onclick="wxAuthon()">点击按钮进入微信授权</button>
+</body>
+</html>
+<script>
+  function wxAuthon() {
+    console.log('点击微信授权的按钮')
+    window.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx0124de280cc9cf5d&redirect_uri=REDIRECT_URI&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect"
+  }
+</script>

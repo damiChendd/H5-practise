@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微信的分享页面</title>
+</head>
+<body>
+  本页面主要用于微信的分享
+</body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+<script type="text/javascript">
+  wx.config({
+    debug: true,
+    appId: 'wxab8b04c7dd67b197',
+    timestamp: 'timestamp',
+    nonceStr: 'nonceStr',
+    signature: 'signature',
+    jsApiList: [
+      'updateAppMessageShareData',//qq、朋友
+      'updateTimelineShareData',// 朋友圈、qq空间
+      'onMenuShareTimeline', // 分享到朋友圈--（即将废弃）
+      'onMenuShareAppMessage',// 分享给朋友--（即将废弃）
+      'onMenuShareQQ',// 分享到qq--（即将废弃）
+      'onMenuShareWeibo',// 分享到微博
+      'onMenuShareQZone' // 分享到qq空间--（即将废弃）
+    ]
+  })
+
+  wx.ready(function () {
+    wx.updateAppMessageShareData({
+      title: ' 朋友测试的微信分享',
+      desc: '测试微信分享的接口,实验能不能成功',
+      link: '放到线上的服务地址',
+      imgUrl: '线上的图片url',
+      success: function () {
+        // 成功的设置
+      }
+    })
+
+    wx.updateTimelineShareData ({
+      title: ' 朋友圈测试的微信分享',
+      link: '',
+      imgUrl: '',
+      success: function () {
+
+      }
+    })
+
+    wx.onMenuShareWeibo ({
+      title: '微博分享测试',
+      desc: '分享描述',
+      link: '分享链接',
+      imgUrl: '分享图片',
+      success: function () {
+
+      },
+      cancel: function () {
+
+      }
+    })
+  })
+
+  wx.error(function () {
+
+  })
+</script>
+</html>

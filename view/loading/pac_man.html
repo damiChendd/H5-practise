@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>吃豆人</title>
+  <style>
+    .content-box{
+      width: 200px;
+      height: 100px;
+      margin: 150px auto ;
+      background-color: #F6E6CC;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="pac_man"></canvas>
+</body>
+<script>
+  // 初始化吃豆人
+  function pacMan() {
+    var pac_man = document.getElementById('pac_man');
+    var draw_pac_man = pac_man.getContext('2d');
+
+    setInterval(function () {
+      openMouse(draw_pac_man)
+    },100);
+    setInterval(function () {
+      closeMouse(draw_pac_man)
+    },1000);
+  }
+
+  //张嘴函数
+  function openMouse(draw_pac_man) {
+    // 清除画布
+    draw_pac_man.clearRect(0,0,300,150)
+
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(100,75,50,0.25*Math.PI,1.75*Math.PI);
+    draw_pac_man.lineTo(100,75);
+    draw_pac_man.closePath();
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'yellow';
+    draw_pac_man.fill();
+
+    // 眼睛
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(105,50,7,0,2*Math.PI);
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'black';
+    draw_pac_man.fill();
+
+    // 眼球
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(106,49,2,0,2*Math.PI);
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'white';
+    draw_pac_man.fill();
+
+    //清除画布
+    // draw_pac_man.clearRect(0,0,300,150)
+  }
+  //闭嘴函数
+  function closeMouse(draw_pac_man) {
+    // 清除画布
+    draw_pac_man.clearRect(0,0,300,150)
+
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(100,75,50,0,2*Math.PI);
+    draw_pac_man.lineTo(100,75);
+    draw_pac_man.closePath();
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'yellow';
+    draw_pac_man.fill();
+
+    // 眼睛
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(105,50,7,0,2*Math.PI);
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'black';
+    draw_pac_man.fill();
+
+    // 眼球
+    draw_pac_man.beginPath();
+    draw_pac_man.arc(106,49,2,0,2*Math.PI);
+    draw_pac_man.stroke();
+    draw_pac_man.fillStyle = 'white';
+    draw_pac_man.fill();
+
+    // 清除画布
+    // draw_pac_man.clearRect(0,0,300,150)
+  }
+
+  pacMan()
+
+
+</script>
+</html>
