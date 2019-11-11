@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c32b5f0a-152e-4377-a48a-54697296da77" name="Default Changelist" comment="" />
+    <list default="true" id="c32b5f0a-152e-4377-a48a-54697296da77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,46 +16,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/wxShare.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/loading/bubble.html">
+        <entry file="file://$PROJECT_DIR$/view/less/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="12" selection-end-column="25" />
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bootstrap/js/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/bootstrap/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/ajax/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/loading/pac_man.html">
+        <entry file="file://$PROJECT_DIR$/view/animationPage/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            <state relative-caret-position="229">
+              <caret line="84" column="130" selection-start-line="84" selection-start-column="130" selection-end-line="84" selection-end-column="130" />
             </state>
           </provider>
         </entry>
@@ -61,40 +59,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/canvas/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+            <state relative-caret-position="208">
+              <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/svg/test.html">
+        <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="n#style#0;n#react#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ellipse#0;n#svg#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#line#0;n#svg#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#polyline#0;n#svg#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#polygon#0;n#svg#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="8" column="29053" selection-start-line="8" selection-start-column="29048" selection-end-line="8" selection-end-column="29053" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/svg/flower.html">
+        <entry file="file://$PROJECT_DIR$/static/css/less.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-356">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#text#0;n#a#0;n#g#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#text#0;n#a#0;n#g#1;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#text#0;n#a#0;n#g#2;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#text#0;n#a#0;n#g#3;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#text#0;n#a#0;n#g#4;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -104,15 +88,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XSLT Stylesheet" />
+        <option value="Sass File" />
+        <option value="Less File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getContext</find>
       <find>png</find>
       <find>delay</find>
+      <find>table</find>
+      <find>firstPage-diyiceng-move</find>
+      <find>getContext</find>
+      <find>page1-font</find>
+      <find>firstPage-diyiceng</find>
+      <find>firstPage-diyiceng-person</find>
+      <find>clear</find>
+      <find>firstPage-diyiceng-text-move</find>
+      <find>firstPage-diyiceng-bottom</find>
+      <find>firstPage-diyiceng-head</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,14 +126,23 @@
         <option value="$PROJECT_DIR$/view/loading/小喇叭.html" />
         <option value="$PROJECT_DIR$/view/loading/bubble.html" />
         <option value="$PROJECT_DIR$/view/loading/pac_man.html" />
+        <option value="$PROJECT_DIR$/view/loading/lottery_disc.html" />
+        <option value="$PROJECT_DIR$/static/css/sass.sass" />
+        <option value="$PROJECT_DIR$/view/sass/index.html" />
+        <option value="$PROJECT_DIR$/view/less/text.less" />
+        <option value="$PROJECT_DIR$/view/less/index.html" />
+        <option value="$PROJECT_DIR$/static/css/less.less" />
+        <option value="$PROJECT_DIR$/view/bootstrap/index.html" />
+        <option value="$PROJECT_DIR$/view/ajax/index.html" />
+        <option value="$PROJECT_DIR$/view/animationPage/test.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-77" />
-    <option name="y" value="13" />
-    <option name="width" value="1935" />
-    <option name="height" value="1040" />
+    <option name="x" value="90" />
+    <option name="y" value="255" />
+    <option name="width" value="2000" />
+    <option name="height" value="1155" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,7 +177,13 @@
               <item name="personBlogH5" type="b2602c69:ProjectViewProjectNode" />
               <item name="personBlogH5" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="loading" type="462c0819:PsiDirectoryNode" />
+              <item name="animationPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personBlogH5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personBlogH5" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -183,13 +194,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/devProject/Vingoo_promoCard_VUE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\myProject\personBlogH5\static\img" />
+      <recent name="E:\myProject\personBlogH5\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -221,22 +234,24 @@
       <workItem from="1572335137496" duration="2463000" />
       <workItem from="1572572515488" duration="599000" />
       <workItem from="1572587567129" duration="2205000" />
-      <workItem from="1572832071074" duration="32730000" />
+      <workItem from="1572832071074" duration="40865000" />
+      <workItem from="1573177341837" duration="9342000" />
+      <workItem from="1573439618558" duration="13690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49536000" />
+    <option name="totallyTimeSpent" value="80703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12417437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14993395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -269,16 +284,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/canvas/test.html">
+    <entry file="file://$PROJECT_DIR$/view/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+        <state relative-caret-position="550">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/loading/bubble.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="25" selection-start-line="7" selection-start-column="5" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/loading/pac_man.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/loading/lottery_disc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/sass.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/sass/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/svg/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="n#style#0;n#ellipse#0;n#svg#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#line#0;n#svg#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#polyline#0;n#svg#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#polygon#0;n#svg#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/svg/flower.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356">
+        <state relative-caret-position="22">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#text#0;n#a#0;n#g#0;n#svg#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -290,38 +353,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/svg/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="n#style#0;n#react#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ellipse#0;n#svg#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#line#0;n#svg#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#polyline#0;n#svg#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#polygon#0;n#svg#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/loading/bubble.html">
+    <entry file="file://$PROJECT_DIR$/view/less/text.less" />
+    <entry file="file://$PROJECT_DIR$/view/less/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="12" selection-end-column="25" />
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/loading/pac_man.html">
+    <entry file="file://$PROJECT_DIR$/static/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/bootstrap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="374">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/less.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/ajax/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/canvas/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="8" column="29053" selection-start-line="8" selection-start-column="29048" selection-end-line="8" selection-end-column="29053" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="84" column="130" selection-start-line="84" selection-start-column="130" selection-end-line="84" selection-end-column="130" />
         </state>
       </provider>
     </entry>

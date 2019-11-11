@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动画测试-个人影集</title>
+  <style>
+    /*旋转*/
+    /*过渡*/
+    /*动画*/
+    body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      position: relative;
+    }
+
+    /*背景的动效*/
+    .firstPage-diyiceng{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+    }
+    .firstPage-diyiceng-move{
+      background-color: #bef0f9;
+      -webkit-transition:background-color 1s;
+    }
+
+    .firstPage-diyiceng-top{
+      text-align: center;
+      padding-top: 50px;
+    }
+    .firstPage-diyiceng-bottom{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /*头部的动效*/
+    .firstPage-diyiceng-head{
+      position: absolute;
+      width: 100%;
+      top: -10px;
+      left: 0;
+      /*margin-top: -50px;*/
+    }
+    .firstPage-diyiceng-head-move{
+      position: absolute;
+      width: 100%;
+      top: 5px;
+      left: 0;
+      transition: top 2s;
+    }
+
+    /*汉字的动效*/
+    .firstPage-diyiceng-text{
+      width: 100%;
+      height: 150px;
+      font-size: 15px;
+    }
+    .firstPage-diyiceng-text-move{
+      width: 100%;
+      height: 150px;
+      font-size: 20px;
+      line-height: 200px;
+      transition: font-size 2s;
+    }
+
+    /*小人的动效*/
+    .firstPage-diyiceng-person{
+      margin-left: 300px;
+    }
+    .firstPage-diyiceng-person-move{
+      margin-left: 0px;
+      transition: margin-left 1s;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div class="firstPage-diyiceng" id="page1-bg">
+      <img src="../../static/img/page1-head.png" alt="" class="firstPage-diyiceng-head firstPage-diyiceng-bottom" id="page1-head">
+      <div class="firstPage-diyiceng-top firstPage-diyiceng-text" id="page1-font">我的旅行相册</div>
+      <img src="../../static/img/page1-person.png" alt="" id="person" class="firstPage-diyiceng-person firstPage-diyiceng-bottom">
+    </div>
+  </div>
+  <!--<div>第二页</div>-->
+  <!--<div>第三页</div>-->
+  <!--<div>第四页</div>-->
+  <!--<div>第五页</div>-->
+  <!--<div>第六页</div>-->
+  <!--<div>第七页</div>-->
+</body>
+<script>
+  // // 在页面加载的时候，将body赋值为浏览器的高度和宽度
+  window.onload = function () {
+    // 设置背景
+    document.getElementById('page1-bg').className = 'firstPage-diyiceng-move'
+
+   // 设置头部动效
+    document.getElementById('page1-head').className = 'firstPage-diyiceng-head-move'
+
+   // 设置文字的效果
+    document.getElementById('page1-font').className = 'firstPage-diyiceng-text-move'
+
+   // 设置小人的动效
+    document.getElementById('person').className = 'firstPage-diyiceng-person-move'
+   }
+</script>
+</html>
