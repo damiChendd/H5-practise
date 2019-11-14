@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>滑屏测试</title>
+  <style>
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .main{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .page1{
+      background-color: pink;
+    }
+    .page2{
+      background-color: #2a85a0;
+    }
+    .page3{
+      background-color: #6CE26C;
+    }
+    .page4{
+      background-color: #a47e3c;
+    }
+    .page5{
+      background-color: #953b39;
+    }
+    .page6{
+      background-color: #7ab5d3;
+    }
+
+    .smallbox{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background-color: #eeeeee;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" id="main">
+    <div id="page1" class="page1">第一屏</div>
+    <div id="page2" class="page2">第二屏</div>
+    <div id="page3" class="page3">第三屏</div>
+    <div id="page4" class="page4">第四屏</div>
+    <div id="page5" class="page5">第五屏</div>
+    <div id="page6" class="page6">第六屏</div>
+  </div>
+</body>
+<script>
+  var  index=0
+  var topInstance = 0;
+  window.onload = function () {
+    console.log('打印屏幕的高度')
+    console.log(document.body.clientHeight)
+    var i;
+    for (i=0;i<6;i++) {
+      document.getElementById('page'+(i+1)).style.height = document.body.clientHeight + 'px'
+    }
+  }
+
+  //滑屏事件
+  window.onscroll = function () {
+  }
+
+
+  // 鼠标滚轮事件
+  window.onmousewheel = function (e) {
+    console.log('打印滑动的事件')
+    console.log(e)
+    if(e.deltaY>0){
+      if(index>=5){
+        alert('到底了哦！')
+        return
+      }
+      topInstance = topInstance-(document.body.clientHeight)+100
+      document.getElementById('main').style.top =  topInstance + 'px'
+      index++
+    }else{
+      if(index<=0){
+        alert('到顶了哦！')
+        return
+      }
+      topInstance = topInstance+(document.body.clientHeight)-100
+      document.getElementById('main').style.top =  topInstance + 'px'
+      index--
+    }
+  }
+
+  // 手机端触屏事件
+  window.touchmove = function () {
+    console.log('触屏')
+  }
+</script>
+</html>
