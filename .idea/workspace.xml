@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c32b5f0a-152e-4377-a48a-54697296da77" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/animationPage/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/animationPage/album.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/animationPage/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/animationPage/album.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/animationPage/scrollTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/animationPage/scrollTest.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,15 +17,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/album.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/loading/bubble.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="902">
@@ -37,44 +28,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/animationPage/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6160">
-              <caret line="280" column="12" selection-start-line="280" selection-start-column="12" selection-end-line="280" selection-end-column="12" />
+            <state relative-caret-position="3388">
+              <caret line="217" column="25" lean-forward="true" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view/animationPage/scroll.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-686">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36982">
-              <caret line="1694" column="4" selection-start-line="1694" selection-start-column="4" selection-end-line="1694" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/animationPage/scrollTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="97" column="12" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+            <state relative-caret-position="406">
+              <caret line="371" column="8" lean-forward="true" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="8" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/animationPage/scroll.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view/animationPage/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -82,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2222">
+            <state relative-caret-position="-550">
               <caret line="101" column="18" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="18" />
             </state>
           </provider>
@@ -91,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -123,38 +120,44 @@
         <option value="XSLT Stylesheet" />
         <option value="Sass File" />
         <option value="Less File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>png</find>
-      <find>delay</find>
-      <find>table</find>
-      <find>firstPage-diyiceng-move</find>
-      <find>getContext</find>
-      <find>page1-font</find>
-      <find>firstPage-diyiceng</find>
-      <find>firstPage-diyiceng-person</find>
-      <find>firstPage-diyiceng-text-move</find>
-      <find>firstPage-diyiceng-head</find>
-      <find>clear</find>
-      <find>offsetTop</find>
-      <find>page-move</find>
-      <find>page2</find>
-      <find>firstPage-diyiceng-bottom</find>
       <find>margin-bottom</find>
       <find>height</find>
       <find>nextTop</find>
       <find>onmousewheel</find>
       <find>nowTop</find>
       <find>position</find>
-      <find>wrap</find>
       <find>main</find>
       <find>top</find>
+      <find>6</find>
+      <find>2</find>
+      <find>5</find>
+      <find>smallbox</find>
+      <find>page2-photobg</find>
+      <find>margin-left</find>
+      <find>page3-photo-frame</find>
+      <find>page3-head</find>
+      <find>now</find>
+      <find>page3-head-move</find>
+      <find>hei</find>
+      <find>wrap</find>
+      <find>transform</find>
+      <find>page3-photo3</find>
+      <find>page3-photo4</find>
+      <find>page3-ship</find>
+      <find>page2-car</find>
+      <find>page7</find>
+      <find>console.log</find>
+      <find>page4-head</find>
+      <find>page4-photo1</find>
+      <find>page4-photo2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,16 +187,18 @@
         <option value="$PROJECT_DIR$/static/css/album.less" />
         <option value="$PROJECT_DIR$/view/animationPage/scroll.js" />
         <option value="$PROJECT_DIR$/view/animationPage/scroll.html" />
-        <option value="$PROJECT_DIR$/view/animationPage/test.html" />
-        <option value="$PROJECT_DIR$/view/animationPage/album.html" />
         <option value="$PROJECT_DIR$/view/animationPage/fullPage.js" />
         <option value="$PROJECT_DIR$/view/animationPage/fullPage.css" />
         <option value="$PROJECT_DIR$/view/animationPage/fullPage.html" />
+        <option value="$PROJECT_DIR$/static/scroll.js" />
+        <option value="$PROJECT_DIR$/static/js/scroll.js" />
+        <option value="$PROJECT_DIR$/view/animationPage/album.html" />
+        <option value="$PROJECT_DIR$/view/animationPage/test.html" />
         <option value="$PROJECT_DIR$/view/animationPage/scrollTest.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="90" />
     <option name="y" value="255" />
     <option name="width" value="2000" />
@@ -222,18 +227,6 @@
               <item name="personBlogH5" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="personBlogH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personBlogH5" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="animationPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personBlogH5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personBlogH5" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -249,12 +242,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\myProject\personBlogH5\static\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\myProject\personBlogH5\static\img" />
       <recent name="E:\myProject\personBlogH5\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\myProject\personBlogH5\static\js" />
+      <recent name="E:\myProject\personBlogH5\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,15 +283,16 @@
       <workItem from="1572832071074" duration="40865000" />
       <workItem from="1573177341837" duration="9342000" />
       <workItem from="1573439618558" duration="50649000" />
-      <workItem from="1573695572055" duration="6492000" />
+      <workItem from="1573695572055" duration="25819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124154000" />
+    <option name="totallyTimeSpent" value="143481000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14729194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -458,40 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/animationPage/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6160">
-          <caret line="280" column="12" selection-start-line="280" selection-start-column="12" selection-end-line="280" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36982">
           <caret line="1694" column="4" selection-start-line="1694" selection-start-column="4" selection-end-line="1694" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2222">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -509,17 +474,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/animationPage/scrollTest.html">
+    <entry file="file://$PROJECT_DIR$/static/js/scroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="97" column="12" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/fullPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-550">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view/animationPage/scroll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-686">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="208">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3388">
+          <caret line="217" column="25" lean-forward="true" selection-start-line="217" selection-start-column="25" selection-end-line="217" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/animationPage/scrollTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="371" column="8" lean-forward="true" selection-start-line="371" selection-start-column="8" selection-end-line="371" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
