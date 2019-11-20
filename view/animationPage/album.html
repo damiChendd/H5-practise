@@ -1,155 +1,154 @@
+<!--js的按屏幕滚动-->
+<!--原理，将每一页设置为浏览器的高度，如果鼠标向下滑动，就main的top值就减负一页，否则就加正的一页-->
+<!--注意点：
+      0.从电脑端切换到手机端刷新是正常的
+      1.html和body的属性及与div的继承关系
+      2.overflrow 属性
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>动画测试-个人影集</title>
+  <title>滑屏测试</title>
   <style>
-    /*旋转*/
-    /*过渡*/
-    /*动画*/
     html,body{
       width: 100%;
       height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
+    }
+    .main{
+      position: relative;
+      top: 0;
       text-align: center;
     }
-    .page{
-      position: relative;
-      background-color: #ffffff;
-      text-align: center;
+    .page1{
+      /*background-color: pink;*/
+      background-color: #bef0f9;
+    }
+    .page2{
+      /*background-color: #2a85a0;*/
+      background-color: #bef0f9;
+    }
+    .page3{
+      /*background-color: #6CE26C;*/
+      background-color: #bef0f9;
     }
     .page4{
-      background-color: #a47e3c;
+      /*background-color: #a47e3c;*/
+      background-color: #bef0f9;
     }
     .page5{
-      background-color: #953b39;
+      /*background-color: #953b39;*/
+      background-color: #bef0f9;
     }
     .page6{
-      background-color: #7ab5d3;
-    }
-    .page-move{
-      position: relative;
+      /*background-color: #7ab5d3;*/
       background-color: #bef0f9;
-      transition: background-color 2s;
     }
-    .line{
-      width: 100%;
-      height: 2px;
-      background-color: #eeeeee;
-    }
-    .bottom{
-      text-align: center;
-      margin-bottom: 50px;
+    .page7{
+      /*background-color: #f938ab;*/
+      background-color: #bef0f9;
     }
 
     /*第一页*/
-    .firstPage-diyiceng{
+    .page1-box{
       position: relative;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
     }
-    .firstPage-diyiceng-move{
-      background-color: #bef0f9;
-      -webkit-transition:background-color 1s;
-    }
-
-    .firstPage-diyiceng-top {
-      text-align: center;
-      padding-top: 50px;
-    }
-
-    .firstPage-diyiceng-head{
+    .page1-head{
       position: absolute;
-      width: 100%;
       top: -10px;
       left: 0;
     }
-    .firstPage-diyiceng-head-move{
+    .page1-head-move{
       position: absolute;
-      width: 100%;
       top: 5px;
       left: 0;
       transition: top 2s;
     }
 
-    .firstPage-diyiceng-text{
-      width: 100%;
+    .page1-text{
       height: 150px;
-      font-size: 15px;
+      font-size: 10px;
     }
-    .firstPage-diyiceng-text-move{
-      width: 100%;
+    .page1-text-move{
       height: 150px;
       font-size: 20px;
       line-height: 200px;
       transition: font-size 2s;
     }
-
-    .firstPage-diyiceng-person{
+    .page1-photo{
       margin-left: 300px;
+      /*transform: translateX(200px);*/
     }
-    .firstPage-diyiceng-person-move{
+    .page1-photo-move{
       margin-left: 0px;
+      /*transform: translateX(0px);*/
       transition: margin-left 1s;
     }
 
     /*第二页*/
-    .secondPage-head{
+    .page2-head{
       opacity:0;
     }
-    .secondPage-head-move{
+    .page2-head-move{
       opacity:1;
       transition: opacity 2s;
     }
-    .secondPage-photobg{
+
+    .page2-photobg{
       width: 60%;
       height: 280px;
       background-color: #fcd9a5;
       margin: 0 auto;
     }
-    .secondPage-photobg-move{
+    .page2-photobg-move{
       width: 68%;
       height: 300px;
       background-color: #fcd9a5;
       margin: 0 auto;
       transition: width 0.5s, height 0.5s;
     }
-    .secondPage-photopic{
+    .page2-photopic{
       width: 0px;
     }
-    .secondPage-photopic-move{
+    .page2-photopic-move{
       width: 80%;
       transition: width 1s;
     }
 
-    .secondPage-text{
+    .page2-text{
       transform: rotate(0deg);
     }
-    .secondPage-text-move{
+    .page2-text-move{
       transform: rotate(360deg);
       transition: transform 2s;
     }
 
-    .secondPage-car{
+    .page2-car{
+      width: 0px;
       margin-left: 300px;
+      /*transform: translateX(200px);*/
     }
-    .secondPage-car-move{
+    .page2-car-move{
+      width: 100%;
       margin-left: 0px;
+      /*transform: translateX(0px);*/
       transition: margin-left 1s;
     }
 
+
     /*第三页*/
-    .thirdPage-head{
+    .page3-head{
       opacity:0;
     }
-    .thirdPage-head-move{
+    .page3-head-move{
       opacity:1;
       transition: opacity 2s;
     }
-    .third-page-photo-frame{
+    .page3-photo-frame{
       position: relative;
       text-align: center;
       margin: 0 auto;
@@ -157,197 +156,485 @@
       /*width: 75%;*/
     }
 
-    .thirdPage-photo1{
+    .page3-photo1{
       /*从上到下飞*/
       position: absolute;
       left: 40px;
       top: -20px;
       opacity: 0;
     }
-    .thirdPage-photo1-move{
+    .page3-photo1-move{
       position: absolute;
       left: 40px;
       top: 0;
       opacity: 1;
       transition: top 2s,opacity 2s;
     }
-    .thirdPage-photo2{
+    .page3-photo2{
       /*从下到上飞*/
       position: absolute;
       left: 135px;
       top: 20px;
       opacity: 0;
     }
-    .thirdPage-photo2-move{
+    .page3-photo2-move{
       position: absolute;
       top: 0;
       left: 135px;
       opacity: 1;
       transition: top 2s,opacity 2s;
     }
-    .thirdPage-photo3{
+    .page3-photo3{
       /*从右向左飞*/
       /*从下到上飞*/
       position: absolute;
-      right: -20px;
-      opacity: 0;
-    }
-    .thirdPage-photo3-move{
-      position: absolute;
+      /*right: -20px;*/
       right: 40px;
       opacity: 1;
-      transition: right 2s,opacity 2s;
+    }
+    .page3-photo3-move{
+      /*position: absolute;*/
+      /*right: 40px;*/
+      /*opacity: 1;*/
+      /*transition: right 2s,opacity 2s;*/
     }
 
-    .thirdPage-photo4{
+    .page3-photo4{
       /*从右向左飞*/
       position: absolute;
-      left: -20px;
+      /*left: -20px;*/
+      left: 40px;
       bottom: 0;
       opacity: 1;
     }
-    .thirdPage-photo4-move{
+    .page3-photo4-move{
       position: absolute;
       left: 40px;
       bottom: 0;
       opacity: 1;
       transition: left 3s,opacity 3s;
     }
-    .thirdPage-photo5{
+    .page3-photo5{
       /*从下向上*/
       position: absolute;
       left: 135px;
       bottom: -20px;
       opacity: 0;
     }
-    .thirdPage-photo5-move{
+    .page3-photo5-move{
       position: absolute;
       bottom: 0;
       left: 135px;
       opacity: 1;
       transition: bottom 3s,opacity 3s;
     }
-    .thirdPage-photo6{
+    .page3-photo6{
       /*从上向下飞*/
       position: absolute;
       right: 40px;
       bottom: -20px;
       opacity: 0;
     }
-    .thirdPage-photo6-move{
+    .page3-photo6-move{
       position: absolute;
       right: 40px;
       bottom: 0;
       opacity: 1;
       transition: bottom 3s,opacity 3s;
     }
-    .thirdPage-ship{
+    .page3-ship{
       margin-left: -370px;
     }
-    .thirdPage-ship-move{
+    .page3-ship-move {
       margin-left: 0px;
       transition: margin-left 2s;
     }
 
-  </style>
-  <!--<link rel="stylesheet/less" href="../../static/css/album.less">-->
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.8.1/less.min.js" ></script>-->
-</head>
-<body>
-  <div id="main">
-    <!--第一页动画-->
-    <div id="page1" class="page">
-      <div>
-        <img src="../../static/img/page1-head.png" alt="" class="firstPage-diyiceng-head bottom" id="page1-head">
-        <div class="firstPage-diyiceng-top firstPage-diyiceng-text" id="page1-font">我的旅行相册</div>
-        <img src="../../static/img/page1-person.png" alt="" id="person" class="firstPage-diyiceng-person firstPage-diyiceng-bottom">
-      </div>
-    </div>
-    <div class="line"></div>
-
-    <div id="page2" class="page">
-      <div>
-        <img src="../../static/img/page2-head.png" alt="" class="secondPage-head" style="margin-bottom: 50px;" id="secondPage-head">
-        <div class="secondPage-photobg" id="secondPage-photobg" style="margin-bottom: 50px">
-          <div>
-            <img src="../../static/img/page2-photo.png" alt="" class="secondPage-photopic" id="secondPage-photopic" style="margin-top: 20px;">
-          </div>
-          <div class="secondPage-text" id="secondPage-text">
-            <div>有的事现在不做</div>
-            <div>就一辈子也不会做了</div>
-          </div>
-        </div>
-        <img src="../../static/img/page2-car.png" alt="" class="secondPage-car" id="secondPage-car">
-      </div>
-    </div>
-    <div class="line"></div>
-
-    <div id="page3" class="page">
-      <div>
-        <img src="../../static/img/page3-head.png" alt="" style="margin-bottom: 50px" class="thirdPage-head" id="thirdPage-head">
-        <div style="margin-bottom: 50px;" class="third-page-photo-frame">
-          <div>
-            <img src="../../static/img/page3-photo1.png" alt="" class="thirdPage-photo1" id="thirdPage-photo1">
-            <img src="../../static/img/page3-photo2.png" alt="" class="thirdPage-photo2" id="thirdPage-photo2">
-            <img src="../../static/img/page3-photo3.png" alt="" class="thirdPage-photo3" id="thirdPage-photo3">
-          </div>
-          <div>
-            <img src="../../static/img/page3-photo4.png" alt="" class="thirdPage-photo4" id="thirdPage-photo4">
-            <img src="../../static/img/page3-photo5.png" alt="" class="thirdPage-photo5" id="thirdPage-photo5">
-            <img src="../../static/img/page3-photo6.png" alt="" class="thirdPage-photo6" id="thirdPage-photo6">
-          </div>
-        </div>
-        <div style="margin-bottom: 50px">
-          <img src="../../static/img/page3-ship.png" alt="" class="thirdPage-ship" id="thirdPage-ship">
-          <div style="display: inline-block">
-            <p>以美好的心</p>
-            <p>欣赏周遭的事物</p>
-            <p>以真诚的心</p>
-            <p>对待每一人</p>
-            <p>以负责的心</p>
-            <p>做好分内的事</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="page4" class="page4">第四屏</div>
-    <div id="page5" class="page5">第五屏</div>
-    <div id="page6" class="page6">第六屏</div>
-  </div>
-</body>
-<!--<script src="../../static/js/scroll.js"></script>-->
-<script>
-  // 在页面加载的时候，将body赋值为浏览器的高度和宽度
-  window.onload = function () {
-    // 将屏幕设置为屏幕的高度
-    var i;
-    for (i=0;i<3;i++){
-      document.getElementById('page'+(i+1)).style.height = document.body.clientHeight + 'px'
-      document.getElementById('page'+(i+1)).className = 'page-move'
+    /*第四页*/
+    .page4-head{
+      opacity:0;
+    }
+    .page4-head-move{
+      opacity: 1;
+      transition: opacity 2s;
     }
 
-    //第一页设置
-    document.getElementById('page1-head').className = 'firstPage-diyiceng-head-move'
-    document.getElementById('page1-font').className = 'firstPage-diyiceng-text-move'
-    document.getElementById('person').className = 'firstPage-diyiceng-person-move'
+    .page4-photo-frame{
+      /*position: relative;*/
+      /*height: 150px;*/
+    }
+    .page4-photo1{
+      /*从左向右滑动*/
+      opacity: 0;
+    }
+    .page4-photo1-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page4-photo2{
+      /*!*从右向左滑动*!*/
+      opacity: 0;
+    }
+    .page4-photo2-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page4-ship{
+      margin-right: -400px;
+    }
+    .page4-ship-move{
+      margin-right: 0px;
+      transition: margin-right 2s;
+    }
 
-    //第二页设置
-    document.getElementById('secondPage-head').className = 'secondPage-head-move'
-    document.getElementById('secondPage-photobg').className = 'secondPage-photobg-move'
-    document.getElementById('secondPage-photopic').className = 'secondPage-photopic-move'
-    document.getElementById('secondPage-text').className = 'secondPage-text-move'
-    document.getElementById('secondPage-car').className = 'secondPage-car-move'
+    /*第5页*/
+    .page5-head{
+      opacity:0;
+    }
+    .page5-head-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page5-content-frame{
+      position: relative;
+      height: 60%;
+    }
+    .page5-photo1{
+     position: absolute;
+      top: 0;
+      left: 30px;
+    }
+    .page5-photo1-move{
+      /*从下到上翻转*/
+      position: absolute;
+      top: 0;
+      left: 30px;
+      transform: rotate(360deg);
+      transition: transform 2s;
+    }
+    .page5-text1{
+      position: absolute;
+      top: 60px;
+      right: 25px;
+      opacity: 0;
+    }
+    .page5-text1-move{
+      position: absolute;
+      top: 60px;
+      right: 25px;
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page5-text2{
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      opacity: 0;
+    }
+    .page5-text2-move{
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page5-photo2{
+      position: absolute;
+      top: 150px;
+      right: 25px;
+    }
+    .page5-photo2-move{
+      position: absolute;
+      top: 150px;
+      right: 25px;
+      transform: rotate(360deg);
+      transition: transform 2s;
+    }
 
-    //第三页设置
-    document.getElementById('thirdPage-head').className = 'thirdPage-head-move'
-    document.getElementById('thirdPage-photo1').className = 'thirdPage-photo1-move'
-    document.getElementById('thirdPage-photo2').className = 'thirdPage-photo2-move'
-    document.getElementById('thirdPage-photo3').className = 'thirdPage-photo3-move'
-    document.getElementById('thirdPage-photo4').className = 'thirdPage-photo4-move'
-    document.getElementById('thirdPage-photo5').className = 'thirdPage-photo5-move'
-    document.getElementById('thirdPage-photo6').className = 'thirdPage-photo6-move'
-    document.getElementById('thirdPage-ship').className = 'thirdPage-ship-move'
-   }
+    .page5-ship{
+      margin-right: -400px;
+    }
+    .page5-ship-move{
+      margin-right: 0px;
+      transition: margin-right 2s;
+    }
+
+    /*第6页*/
+    .page6-frame{
+      position: relative;
+      height: 100%;
+    }
+    .page6-head{
+      opacity:0;
+    }
+    .page6-head-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page6-photo1{
+      /*从左向右飞进来*/
+      position: absolute;
+      top: 70px;
+      left: -500px;
+    }
+    .page6-photo1-move{
+      position: absolute;
+      top: 70px;
+      left: 25px;
+      transition: left 2s;
+    }
+    .page6-photo2{
+      position: absolute;
+      top: 70px;
+      right: -500px;
+    }
+    .page6-photo2-move{
+      position: absolute;
+      top: 70px;
+      right: 25px;
+      transition: right 2s;
+    }
+    .page6-house{
+      /*从下向上飞*/
+      position: absolute;
+      bottom: -500px;
+      left: 0px;
+    }
+    .page6-house-move{
+      position: absolute;
+      bottom: 30px;
+      left: 0px;
+      transition: bottom 2s;
+    }
+    /*第七页*/
+    .page7-head{
+      opacity:0;
+    }
+    .page7-head-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page7-music{
+      /*音乐从上到下翻转*/
+    }
+    .page7-music-move{
+      /*transform: rotateZ(180deg);*/
+      transform: rotateX(360deg);
+      transition: transform 2s;
+    }
+    .page7-text{
+      opacity: 0;
+    }
+    .page7-text-move{
+      opacity: 1;
+      transition: opacity 2s;
+    }
+    .page7-earth-frame{
+      position: relative;
+    }
+    .page7-earth{
+      /*地球从右向左*/
+      position: absolute;
+      top: 0;
+      right: -200px;
+    }
+    .page7-earth-move{
+      position: absolute;
+      top: 0;
+      right: 30px;
+      transition: right 2s;
+    }
+  </style>
+</head>
+<body>
+<div class="main" id="main">
+  <div id="page1" class="page1">
+    <div class="page1-box">
+      <img src="../../static/img/page1-head.png" alt="" class="page1-head" id="page1-head">
+      <div class="page1-text" id="page1-text">我的旅行相册</div>
+      <img src="../../static/img/page1-person.png" alt="" class="page1-photo" id="page1-photo">
+    </div>
+  </div>
+  <div id="page2" class="page2">
+    <img src="../../static/img/page2-head.png" alt="" class="page2-head" id="page2-head">
+    <div>
+      <div class="page2-photobg" id="page2-photobg">
+        <img src="../../static/img/page2-photo.png" alt="" class="page2-photopic" id="page2-photopic">
+      </div>
+      <div class="page2-text" id="page2-text">
+        <div>有的事现在不做</div>
+        <div>就一辈子也不会做了</div>
+      </div>
+    </div>
+    <img src="../../static/img/page2-car.png" alt="" class="page2-car" id="page2-car">
+  </div>
+  <div id="page3" class="page3">
+    <img src="../../static/img/page3-head.png" alt="" class="page3-head" id="page3-head">
+    <div class="page3-photo-frame">
+      <div>
+        <img src="../../static/img/page3-photo1.png" alt="" class="page3-photo1" id="page3-photo1">
+        <img src="../../static/img/page3-photo2.png" alt="" class="page3-photo2" id="page3-photo2">
+        <img src="../../static/img/page3-photo3.png" alt="" class="page3-photo3" id="page3-photo3">
+      </div>
+      <div>
+        <img src="../../static/img/page3-photo4.png" alt="" class="page3-photo4" id="page3-photo4">
+        <img src="../../static/img/page3-photo5.png" alt="" class="page3-photo5" id="page3-photo5">
+        <img src="../../static/img/page3-photo6.png" alt="" class="page3-photo6" id="page3-photo6">
+      </div>
+    </div>
+    <div>
+      <img src="../../static/img/page3-ship.png" alt="" class="page3-ship" id="page3-ship">
+      <div style="display: inline-block">
+        <p>以美好的心</p>
+        <p>欣赏周遭的事物</p>
+        <p>以真诚的心</p>
+        <p>对待每一人</p>
+        <p>以负责的心</p>
+        <p>做好分内的事</p>
+      </div>
+    </div>
+  </div>
+  <div id="page4" class="page4">
+    <img src="../../static/img/page4_head.png" alt="" class="page4-head" id="page4-head">
+    <div class="page4-photo-frame">
+      <img src="../../static/img/page4-photo1.png" alt="" class="page4-photo1" id="page4-photo1">
+      <img src="../../static/img/page4-photo2.png" alt="" class="page4-photo2" id="page4-photo2">
+    </div>
+    <img src="../../static/img/page4-ship.png" alt="" class="page4-ship" id="page4-ship">
+  </div>
+  <div id="page5" class="page5">
+    <img src="../../static/img/page5-head.png" alt="" class="page5-head" id="page5-head">
+    <div class="page5-content-frame">
+      <img src="../../static/img/page5-photo1.png" alt="" class="page5-photo1" id="page5-photo1">
+      <div class="page5-text1" id="page5-text1">
+        <div>梦想并不奢侈</div>
+        <div>只要勇敢的迈出第一步</div>
+      </div>
+      <img src="../../static/img/page5-photo2.png" alt="" class="page5-photo2" id="page5-photo2">
+      <div class="page5-text2" id="page5-text2">
+        <div>如果你不出去走走</div>
+        <div>你就会以为这就是世界</div>
+      </div>
+    </div>
+    <img src="../../static/img/page5-ship.png" alt="" class="page5-ship" id="page5-ship">
+  </div>
+  <div id="page6" class="page6">
+    <div class="page6-frame">
+      <img src="../../static/img/page6-head.png" alt="" class="page6-head" id="page6-head">
+      <div>
+        <img src="../../static/img/page6-photo1.png" alt="" class="page6-photo1" id="page6-photo1">
+        <img src="../../static/img/page6-photo2.png" alt="" class="page6-photo2" id="page6-photo2">
+      </div>
+      <img src="../../static/img/page6-house.png" alt="" class="page6-house" id="page6-house">
+    </div>
+  </div>
+  <div id="page7" class="page7">
+    <img src="../../static/img/page7-head.png" alt="" class="page7-head" id="page7-head">
+    <img src="../../static/img/page7-music.png" alt="" class="page7-music" id="page7-music">
+    <div class="page7-text" id="page7-text">
+      <p>当你下定决心准备出发时</p>
+      <p>最困难的时刻就已经过去了</p>
+      <p>那么,出发吧.</p>
+    </div>
+    <div class="page7-earth-frame">
+      <img src="../../static/img/page7-earth.png" alt="" class="page7-earth" id="page7-earth">
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  var  index=0
+  var topInstance = 0;
+  var pageLength = 7
+  window.onload = function () {
+    var i;
+    for (i=0;i<pageLength;i++) {
+      document.getElementById('page'+(i+1)).style.height = document.body.clientHeight + 'px'
+    }
+    //加载第一页的动画
+    showAnimation(0)
+  };
+
+  //滑屏事件
+  window.onscroll = function () {
+  };
+
+  // 鼠标滚轮事件
+  window.onmousewheel = function (e) {
+    if(e.deltaY>0){
+      if(index>=pageLength-1){
+        alert('到底了哦！')
+        return
+      }
+      index++
+      topInstance = topInstance-(document.body.clientHeight);
+      document.getElementById('main').style.top =  topInstance + 'px'
+      showAnimation(index)
+    }else{
+      if(index<=0){
+        alert('到顶了哦！')
+        return
+      }
+      index--
+      topInstance = topInstance+(document.body.clientHeight);
+      document.getElementById('main').style.top =  topInstance + 'px'
+      showAnimation(index)
+    }
+  };
+
+  function showAnimation(index){
+    switch (index) {
+      case 0:
+        document.getElementById('page1-head').className = 'page1-head-move';
+        document.getElementById('page1-text').className = 'page1-text-move';
+        document.getElementById('page1-photo').className = 'page1-photo-move';
+        break;
+      case 1:
+        document.getElementById('page2-head').className = 'page2-head-move';
+        document.getElementById('page2-photobg').className = 'page2-photobg-move';
+        document.getElementById('page2-photopic').className = 'page2-photopic-move';
+        document.getElementById('page2-text').className = 'page2-text-move';
+        document.getElementById('page2-car').className = 'page2-car-move';
+        break;
+      case 2:
+        document.getElementById('page3-head').className = 'page3-head-move';
+        document.getElementById('page3-photo1').className = 'page3-photo1-move';
+        document.getElementById('page3-photo2').className = 'page3-photo2-move';
+        document.getElementById('page3-photo5').className = 'page3-photo5-move';
+        document.getElementById('page3-photo6').className = 'page3-photo6-move';
+        document.getElementById('page3-ship').className = 'page3-ship-move';
+        break;
+      case 3:
+        document.getElementById('page4-head').className = 'page4-head-move';
+        document.getElementById('page4-photo1').className = 'page4-photo1-move';
+        document.getElementById('page4-photo2').className = 'page4-photo2-move';
+        document.getElementById('page4-ship').className = 'page4-ship-move';
+        break;
+      case 4:
+        document.getElementById('page5-head').className = 'page5-head-move';
+        document.getElementById('page5-photo1').className = 'page5-photo1-move';
+        document.getElementById('page5-text1').className = 'page5-text1-move';
+        document.getElementById('page5-text2').className = 'page5-text2-move';
+        document.getElementById('page5-photo2').className = 'page5-photo2-move';
+        document.getElementById('page5-ship').className = 'page5-ship-move';
+        break;
+      case 5:
+        document.getElementById('page6-head').className = 'page6-head-move';
+        document.getElementById('page6-photo1').className = 'page6-photo1-move';
+        document.getElementById('page6-photo2').className = 'page6-photo2-move';
+        document.getElementById('page6-house').className = 'page6-house-move';
+        break;
+      case 6:
+        document.getElementById('page7-head').className = 'page7-head-move';
+        document.getElementById('page7-music').className = 'page7-music-move';
+        document.getElementById('page7-text').className = 'page7-text-move';
+        document.getElementById('page7-earth').className = 'page7-earth-move';
+        break;
+    }
+  }
+
+  // 手机端触屏事件
+  window.touchmove = function () {
+  }
 </script>
 </html>
