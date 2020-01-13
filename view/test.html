@@ -1,46 +1,132 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+  <!--<meta charset="UTF-8">-->
+  <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--测试页面-->
+<!--</body>-->
+<!--<script type="text/javascript">-->
+  <!--console.log('javascript中的this')-->
+  <!--console.log(this)-->
+
+  <!--// function thisTest() {-->
+  <!--//   'use strict';-->
+  <!--//   console.log('打印函数中的this')-->
+  <!--//   console.log(this)-->
+  <!--// }-->
+  <!--// thisTest.prototype.thisTestChild = function () {-->
+  <!--//   console.log('打印子函数的this')-->
+  <!--//   console.log(this)-->
+  <!--// }-->
+  <!--//-->
+  <!--// // var p = new thisTest()-->
+  <!--// // p.thisTestChild()-->
+  <!--// thisTest()-->
+  <!--var obj = {-->
+    <!--name:'小红',-->
+    <!--age:'10',-->
+    <!--showName: function () {-->
+      <!--console.log('showNamethis')-->
+      <!--console.log(this.name)-->
+    <!--},-->
+    <!--showAge: function () {-->
+      <!--console.log('showAgeThis')-->
+      <!--console.log(this.age)-->
+    <!--}-->
+  <!--}-->
+
+  <!--var user = Object.create(obj)-->
+  <!--user.showName()-->
+  <!--user.showAge()-->
+
+
+<!--</script>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html-->
+        <!--PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"-->
+        <!--"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <title>simple document</title>
+  <link rel="stylesheet" href="../static/css/test.css">
+  <!--<style>-->
+    <!--@import url("../static/css/test.css");-->
+  <!--</style>-->
+  <style>
+    .outer{
+      height: 50px;
+    }
+    .inner{
+      width: 120px;
+      height: 100px;
+    }
+  </style>
+
 </head>
 <body>
-测试页面
+<div>盒子</div>
+<p>a simple paragraph</p>
+<img src="../static/img/page1-head.png" alt=""/>
+<iframe src="http://www.baidu.com" frameborder="0" width="500px" height="500px"></iframe>
+<a>我们</a><a>你们</a>
+<div class="box" ></div>
+<div class="float-box" onclick="changeBox()" id="box">点击测试</div>
+<button>按钮测试</button>
+<i>测试</i>
+<em>aaaa</em>
+<input type="text" multiple>
+
+<div style="color: red;text-color:blue">
+  <span style="color: green;text-color:black">HELLO</span>
+</div>
+
+<div class="outer">
+  <meta charset="utf-8">
+  <span class="inner">content</span>
+</div>
 </body>
-<script type="text/javascript">
-  console.log('javascript中的this')
-  console.log(this)
 
-  // function thisTest() {
-  //   'use strict';
-  //   console.log('打印函数中的this')
-  //   console.log(this)
-  // }
-  // thisTest.prototype.thisTestChild = function () {
-  //   console.log('打印子函数的this')
-  //   console.log(this)
-  // }
-  //
-  // // var p = new thisTest()
-  // // p.thisTestChild()
-  // thisTest()
-  var obj = {
-    name:'小红',
-    age:'10',
-    showName: function () {
-      console.log('showNamethis')
-      console.log(this.name)
+<script>
+  var t = 0;
+  var position_list = [
+    {
+      id:0,
+      name:111
     },
-    showAge: function () {
-      console.log('showAgeThis')
-      console.log(this.age)
-    }
+    {
+      id:1,
+      name:2222,
+    },
+  ]
+  var arr_a = [1,2,3,4,5]
+  var arr_b = arr_a
+  window.onload = function() {
+    // console.log('in\n')
+    // for (let index in this.position_list){
+    //   console.log(this.position_list[index].name)
+    //   console.log(index)
+    // }
+    //
+    // console.log('of\n')
+    // for(let i of this.position_list){
+    //   console.log(i.name)
+    //   console.log(i)
+    // }
+    //
+    // console.log('each\n')
+    // this.position_list.forEach(item=> {
+    //   console.log(item)
+    //   console.log(item.name)
+    // })
+    console.log(arr_b)
+    arr_b[5] = 6
+    console.log(arr_a)
   }
-
-  var user = Object.create(obj)
-  user.showName()
-  user.showAge()
-
-
 </script>
 </html>
