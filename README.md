@@ -21,10 +21,11 @@
 ### animationPage-album.html
 
 * 关于相册的翻页动效，目前只能在网页的f12，手机调试页面看，有待完善
-* <img src="./static/img/album.png">
+<img src="./static/img/album.png">
+
 
 ### loading--bubble
 
 * 用css3的animation做的一个小泡泡loading
-* <img src="./static/img/bubble.png">
+<img src="./static/img/bubble.png">
 
