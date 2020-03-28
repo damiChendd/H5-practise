@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big-box {
+            width: 900px;
+            height: 202px;
+            /* overflow-x: scroll; */
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.3);
+            /* white-space: nowrap; */
+            position: relative;
+        }
+        #content-box{
+            width: 2600px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .small-box {
+            width: 200px;
+            /* height: 200px; */
+            border: 1px solid #cccccc;
+            margin-right: 20px;
+            display: inline-block;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <div id="content-box">
+            <div class="small-box" id="small-box1">盒子1</div>
+            <div class="small-box" id="small-box2">盒子2</div>
+            <div class="small-box" id="small-box3">盒子3</div>
+            <div class="small-box" id="small-box4">盒子4</div>
+            <div class="small-box" id="small-box5">盒子5</div>
+            <div class="small-box" id="small-box6">盒子6</div>
+            <div class="small-box" id="small-box7">盒子7</div>
+            <div class="small-box" id="small-box8">盒子8</div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    window.onload = function () {
+        // 算法，拿到要移动的dom元素，取到当前位置的鼠标及偏移位置的鼠标，然后将元素移动相减的距离
+        var box4 = document.getElementById('content-box');
+        box4.onmousedown = function (e) {
+            //获取鼠标在盒子中的位置
+            var inX = e.clientX - box4.offsetLeft    
+            box4.onmousemove = function (e) {
+                // 鼠标位置-鼠标在盒子中的位置
+                box4.style.left = e.clientX-inX + 'px'
+            }
+            box4.onmouseup = function () {
+                box4.onmousemove = null;
+                box4.onmouseup = null
+            }
+        }
+    }
+</script>
+
+<!-- 拖拽指导 -->
+<!-- https://blog.csdn.net/sh435367384/article/details/79741356 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 180px;
+            background-color: #ccc;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+
+        .top {
+            height: 30px;
+            text-align: center;
+            font: 400 15px/30px "simsun";
+            background-color: pink;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="top">点击此处拖拽盒子</div>
+</div>
+<script>
+    var box = document.getElementsByTagName("div")[0];
+    var top = box.children[0];
+    //点击盒子 然后拖拽
+    //鼠标左键点击事件 鼠标移动事件
+    top.onmousedown = function (ev) {
+        ev = ev || window.event;
+        //1、鼠标的坐标
+        var pageX = ev.pageX || scroll().left + ev.clientX;
+        var pageY = ev.pageY || scroll().top + ev.clientY;
+        //2、鼠标在盒子中的坐标
+        var x = pageX - box.offsetLeft;
+        var y = pageY - box.offsetTop;
+        top.onmousemove = function (ev) {
+            //3、进入onmousemove事件，鼠标左边不断更新
+            var pageX = ev.pageX || scroll().left + ev.clientX;
+            var pageY = ev.pageY || scroll().top + ev.clientY;
+            ev = ev || window.event;
+            box.style.left = pageX - x + "px";
+            box.style.top = pageY - y + "px";
+            box.style.opacity = 0.4;
+            //取消文本被选中
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        }
+    }
+
+    //解绑
+    top.onmouseup = function () {
+        top.onmousemove = null;
+        box.style.opacity = 1;
+    }
+
+    function scroll() {
+        return {
+            "top": window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+            "left": window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
+        };
+    }
+</script>
+</body>
+</html> -->
